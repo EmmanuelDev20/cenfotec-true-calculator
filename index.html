@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de la Verdad</title>
-    <link rel="stylesheet" href="./assets/main.css">
+    <title>Calculadora de Tablas de Verdad</title>
+    <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
-  <h1>Calculadora de la verda</h1>
     <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('(')">(</button>
-            <button onclick="appendToDisplay(')')">)</button>
-            <button onclick="appendToDisplay('!')">¬</button>
-            <button onclick="appendToDisplay('p')">p</button>
-            <button onclick="appendToDisplay('q')">q</button>
-            <button onclick="appendToDisplay('r')">r</button>
-            <button onclick="appendToDisplay('s')">s</button>
-            <button onclick="appendToDisplay('&')">∧</button>
-            <button onclick="appendToDisplay('||')">v</button>
-            <button onclick="appendToDisplay('^')">⊕</button>
-            <button class="equal" onclick="calculate()">=</button>
+        <div class="display">
+            <div id="screen">Ejemplo: ~(p∧q)→s</div>
         </div>
+        
+        <div class="buttons">
+            
+            <div class="row">
+                <button class="btn btn-clear">AC</button>
+                <button class="btn btn-del">DEL</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+            </div>
+            
+            <div class="row">
+                <button class="btn">~</button>
+                <button class="btn">∧</button>
+                <button class="btn">∨</button>
+                <button class="btn">→</button>
+            </div>
+            
+            <div class="row">
+                <button class="btn">p</button>
+                <button class="btn">q</button>
+                <button class="btn">↔</button>
+                <!-- <button class="btn">⊕</button> -->
+                 
+            </div>
+            
+            <div class="row">
+                <button class="btn">r</button>
+                <button class="btn">s</button>
+                <button class="btn btn-equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="truthTable" class="truth-table-container">
+        <!-- La tabla de verdad se generará aquí -->
     </div>
 
     <script src="./assets/main.js"></script>
