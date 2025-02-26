@@ -51,7 +51,7 @@ button {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .row {
   display: grid;
@@ -72,7 +72,7 @@ button {
 }
 
 .btn:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #1e2530;
 }
 
@@ -99,18 +99,26 @@ button {
   background-color: #4a5568;
 }
 
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .truth-table-container {
-  margin-top: 20px;
+  border: 20px;
+  margin-top: 60px;
   width: 100%;
   max-width: 600px;
   overflow-x: auto;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 10px 7px 10px rgba(49, 7, 7, 0.5);
+  border-radius: 20px;
 }
 
 table {
   width: 100%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #2d3748;
   color: white;
   border-radius: 20px;
